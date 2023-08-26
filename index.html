@@ -1,0 +1,44 @@
+<!-- Define the document type as HTML5 -->
+<!DOCTYPE html>
+<!-- Start of the HTML document -->
+<html>
+<head>
+    <!-- Include the jQuery library -->
+    <script type="text/javascript" src="jquery-2.2.0.min.js"></script>
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+</head>
+<body>
+    <!-- Container for the top bar -->
+    <div id="top-bar">
+        <!-- Logo for the CodePlayer application -->
+        <p class="logo">CodePlayer</p>
+        <!-- Container for the toggle buttons -->
+        <div class="buttonContainer">
+            <!-- Toggle button for HTML with initial active state -->
+            <div class="toggleButton active" id="html">HTML</div>
+            <!-- Toggle button for CSS -->
+            <div class="toggleButton" id="css">CSS</div>
+            <!-- Toggle button for JavaScript -->
+            <div class="toggleButton" id="javascript">JavaScript</div>
+            <!-- Toggle button for Output with initial active state -->
+            <div class="toggleButton active" id="output">Output</div>
+        </div>
+    </div>
+    <!-- Container for code input panels and output panel -->
+    <div id="bodyContainer">
+        <!-- Textarea for HTML code input with initial content -->
+        <textarea id="htmlPanel" class="panel"><p id="paragraph">Hello World</p></textarea>
+        <!-- Textarea for CSS code input with initial hidden state -->
+        <textarea id="cssPanel" class="panel hidden">p { color: green }</textarea>
+        <!-- Textarea for JavaScript code input with initial hidden state -->
+        <textarea id="javascriptPanel" class="panel hidden">document.getElementById("paragraph").innerHTML = "Chill!";</textarea>
+        <!-- Iframe element for displaying the output -->
+        <iframe id="outputPanel" class="panel"></iframe>
+    </div>
+    <!-- Include the external JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+<!-- End of the HTML document -->
+</html>

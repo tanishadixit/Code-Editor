@@ -1,0 +1,77 @@
+/* Reset default padding, margin, and font */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling for the top bar */
+#top-bar {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    background-color: #EDEDED;
+}
+/* Styling for the logo */
+.logo {
+    font-size: 150%;
+    font-weight: bolder;
+}
+/* Styling for the button container */
+.buttonContainer {
+    width: 300px;
+    margin: 0 auto;
+    position: absolute;
+    left: 40%;
+    top: 5px;
+    cursor: pointer;
+}
+/* Styling for the toggle buttons */
+.toggleButton {
+    float: left;
+    border: 1px solid grey;
+    color: #232323;
+    padding: 5px;
+    border-right: none;
+}
+/* Styling for the HTML toggle button */
+#html {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+/* Styling for the Output toggle button */
+#output {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-right: 1px solid grey;
+}
+/* Styling for active toggle buttons */
+.active {
+    background-color: rgb(129, 214, 238);
+}
+/* Styling for highlighted toggle buttons */
+.highlightedButton {
+    background-color: grey;
+}
+/* Styling for textarea */
+textarea {
+    width: 50%;
+    height: 100%;
+    resize: none;
+    float: left;
+    border-top: none;
+    border-bottom: none;
+    border-color: grey;
+}
+/* Styling for the output panel */
+#outputPanel {
+    border: none;
+}
+/* Styling to hide elements */
+.hidden {
+    display: none;
+}
+/* Styling for panels */
+.panel {
+    border-left: none;
+}
